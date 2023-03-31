@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+platform :ios, '11.0'
+
+#忽略所有警告（Pods导入库中的警告）
+inhibit_all_warnings!
+
+
+# target数组 如果有新的target直接加入该数组
+targetsArray = ['YYKitDemo']
+# 循环
+targetsArray.each do |t|
+    target t do
+        use_frameworks!
+        # OC库  
+
+
+        #性能检测库
+#        pod 'LookinServer', '1.0.2'
+        pod 'LookinServer', '1.0.2', :configurations => ['Debug']
+
+        
+    end
+end

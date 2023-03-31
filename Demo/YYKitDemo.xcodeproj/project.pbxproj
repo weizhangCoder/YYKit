@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2593D5556E9769F8BAC76D33 /* Pods_YYKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA17CD99375F28BDAA77C11A /* Pods_YYKitDemo.framework */; };
+		729129DD29D67BD200FA032D /* LookinServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729129DC29D67BD200FA032D /* LookinServer.framework */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
 		D9067DF41B9813B500F346EB /* YYTextEditExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF31B9813B500F346EB /* YYTextEditExample.m */; };
@@ -196,8 +198,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16AC0F58062CCDD245EDC69F /* Pods-YYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYKitDemo.release.xcconfig"; path = "Target Support Files/Pods-YYKitDemo/Pods-YYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		729129DC29D67BD200FA032D /* LookinServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LookinServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8B8293CB0AFA6476F83963 /* Pods-YYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-YYKitDemo/Pods-YYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
 		ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExample.m; sourceTree = "<group>"; };
+		BA17CD99375F28BDAA77C11A /* Pods_YYKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9067DEF1B975D3900F346EB /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
 		D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextExampleHelper.m; sourceTree = "<group>"; };
 		D9067DF21B9813B500F346EB /* YYTextEditExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextEditExample.h; sourceTree = "<group>"; };
@@ -520,6 +526,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729129DD29D67BD200FA032D /* LookinServer.framework in Frameworks */,
 				D9B25F9E1BEE79280038C00A /* WebP.framework in Frameworks */,
 				D9B25F9D1BEE79280038C00A /* bpg.framework in Frameworks */,
 				D9700D9E1BC7D44B00F878A4 /* libsqlite3.tbd in Frameworks */,
@@ -536,12 +543,22 @@
 				D9C786401AB7C69E001317AD /* Accelerate.framework in Frameworks */,
 				D9B263B91BEF66010038C00A /* MobileCoreServices.framework in Frameworks */,
 				D9C786441AB7C6D8001317AD /* SystemConfiguration.framework in Frameworks */,
+				2593D5556E9769F8BAC76D33 /* Pods_YYKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36430C9ACD52208F12B40CD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A8B8293CB0AFA6476F83963 /* Pods-YYKitDemo.debug.xcconfig */,
+				16AC0F58062CCDD245EDC69F /* Pods-YYKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D9067E041B98A39200F346EB /* Feed List */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +796,7 @@
 				D97484D219CAAD2900F46DE1 /* YYKitDemo */,
 				D974852319CAB3AE00F46DE1 /* Frameworks */,
 				D97484D119CAAD2900F46DE1 /* Products */,
+				36430C9ACD52208F12B40CD8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -822,6 +840,7 @@
 		D974852319CAB3AE00F46DE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				729129DC29D67BD200FA032D /* LookinServer.framework */,
 				D9B25F9B1BEE79280038C00A /* bpg.framework */,
 				D9B25F9C1BEE79280038C00A /* WebP.framework */,
 				D9700D9D1BC7D44B00F878A4 /* libsqlite3.tbd */,
@@ -839,6 +858,7 @@
 				D974851919CAB39100F46DE1 /* QuartzCore.framework */,
 				D974851719CAB38D00F46DE1 /* Foundation.framework */,
 				D974851519CAB38900F46DE1 /* UIKit.framework */,
+				BA17CD99375F28BDAA77C11A /* Pods_YYKitDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1129,9 +1149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D97484F319CAAD2900F46DE1 /* Build configuration list for PBXNativeTarget "YYKitDemo" */;
 			buildPhases = (
+				186083278B855BDDCC585D3D /* [CP] Check Pods Manifest.lock */,
 				D97484CC19CAAD2900F46DE1 /* Sources */,
 				D97484CD19CAAD2900F46DE1 /* Frameworks */,
 				D97484CE19CAAD2900F46DE1 /* Resources */,
+				5D653C5123101D191FA84A5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1227,6 +1249,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186083278B855BDDCC585D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YYKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D653C5123101D191FA84A5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YYKitDemo/Pods-YYKitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YYKitDemo/Pods-YYKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D97484CC19CAAD2900F46DE1 /* Sources */ = {
@@ -1479,9 +1544,11 @@
 		};
 		D97484F419CAAD2900F46DE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8B8293CB0AFA6476F83963 /* Pods-YYKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = V5J935B9R9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -1499,7 +1566,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1508,9 +1575,11 @@
 		};
 		D97484F519CAAD2900F46DE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AC0F58062CCDD245EDC69F /* Pods-YYKitDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = V5J935B9R9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -1526,8 +1595,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
